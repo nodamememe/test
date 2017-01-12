@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<!-- title前に記述 -->
+<meta charset="utf-8">
+<meta http-equiv="content-type">
+<meta http-equiv="content-language">
+<meta http-equiv="content-style-type">
+<meta http-equiv="content-script-type">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サイト登録</title>
+<meta name="description" content="サイトの説明（キーワード含め２〜３件）">
+<meta name="keyword" content="キーワード,キーワード1,キーワード2,（２〜７件）">
+<!-- css -->
+<link rel="stylesheet" href="../css/style.css" media="screen" title="no title" charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/swiper.min.js"></script>
+<!-- js -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="" id="rank_body">
+
+<div id="wrap" class="site_owner">
+
+<header class="normal_header">
+  <p>サイト登録</p>
+</header><!-- header end -->
+
+<div id="container">
+  <!-- 登録フォーム -->
+  <form id="owner_form" class="register_form" action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+    <fieldset>
+      <div class="register_form_wrap"><!-- サイト名 -->
+        <label class="register_form_name" for="siteName">サイト名</label>
+        <div class="register_form_input">
+          <input id="siteName" type="text" name="サイト名" placeholder="サイト名を入力してください">
+        </div>
+        <span class="alert_form">サイト名が入力されていません</span>
+      </div>
+      <div class="register_form_wrap"><!-- サイトURL -->
+        <label class="register_form_name" for="siteUrl">サイトURL</label>
+        <div class="register_form_input">
+          <input id="siteUrl" type="url" name="サイトURL" placeholder="サイトURLを入力してください">
+        </div>
+        <span class="alert_form">サイトURLが入力されていません</span>
+      </div>
+      <div class="register_form_wrap"><!-- email -->
+        <label class="register_form_name" for="userEmail">メールアドレス</label>
+        <div class="register_form_input">
+          <input id="userEmail" type="email" name="メールアドレス" placeholder="メールアドレスを入力して下さい">
+        </div>
+        <span class="alert_form">メールアドレスが入力されていません</span>
+      </div>
+      <div class="register_form_wrap"><!-- PASSWORD -->
+        <label class="register_form_name" for="passWord">パスワード</label>
+        <div class="register_form_input">
+          <input id="passWord" type="password" name="パスワード" placeholder="パスワードを入力して下さい">
+        </div>
+        <span class="alert_form">パスワードが入力されていません</span>
+      </div>
+      <div class="register_form_wrap"><!-- PASSWORD確認 -->
+        <label class="register_form_name" for="passConf">パスワード確認</label>
+        <div class="register_form_input">
+          <input id="passConf" type="password" name="パスワード確認" placeholder="パスワードを入力して下さい">
+        </div>
+        <span class="alert_form">パスワードが入力されていません</span>
+      </div>
+      <div class="register_form_wrap"><!-- サイト説明 -->
+        <label class="register_form_name" for="siteDescription">サイト説明</label>
+        <div class="register_form_input">
+          <textarea id="siteDescription" maxlength="50" name="サイト説明" placeholder="サイト説明を入力して下さい"></textarea>
+        </div>
+        <span class="alert_form">サイト説明が入力されていません</span>
+      </div>
+      <div class="register_form_wrap"><!-- 小カテゴリ選択 -->
+        <label class="register_form_name" for="smallCategory">小カテゴリ選択</label>
+        <div class="register_form_input">ジャンル
+          <select id="smallCategory">
+            <option value="all" selected>総合</option>
+            <option value="小カテゴリ1">小カテゴリ1</option>
+            <option value="小カテゴリ2">小カテゴリ2</option>
+            <option value="小カテゴリ3">小カテゴリ3</option>
+          </select>
+        </div>
+      </div>
+      <div class="register_form_wrap"><!-- サイトイメージ -->
+        <label class="register_form_name" for="siteImage">サイトイメージ<span class="alert">※画像が無い場合はnoimageになります。</span></label>
+        <div class="register_form_input file_css">
+          画像を添付する
+          <input id="siteImage" type="file" name="サイトイメージ">
+        </div>
+      </div>
+      <div class="owner_submit">
+        <button type="submit">確認画面へ</button>
+      </div>
+    </fieldset>
+  </form><!-- 登録フォーム -->
+</div><!-- container end -->
+
+<footer>
+  <div class="copy">©rankingsite.Inc</div>
+</footer>
+
+</div><!-- wrap end -->
+</body>
+</html>
